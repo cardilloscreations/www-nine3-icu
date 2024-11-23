@@ -1,0 +1,23 @@
+---
+layout: linktree
+profile_name: This Midlife Hustle
+profile_image: ThisMidLifeHustle.600sq.webp
+---
+
+<div class="ltree-buttons d-grid gap-3">
+
+    {% assign email = "hello@thismidlifehustle.com" %}
+    <a class="btn btn-light rounded-pill" href="mailto:{{ email }}" role="button" title="{{ email }}" target="_blank" aria-label="Email Address">
+        <span><img class="float-start" src="{% link {{ site.images_path }}/{{ site.email-icon }} %}" alt="Email Icon" height="100" width="100">&nbsp;&nbsp; Email ({{ email }})</span>
+    </a>
+
+    <a class="btn btn-light rounded-pill" href="https://thismidlifehustle.com" role="button" title="Webpage" target="_blank" aria-label="Main Podcast Link">
+        <span><img class="float-start" src="{% link {{ site.images_path }}/{{ site.link-icon }} %}" alt="Link Icon" height="100" width="100">&nbsp;&nbsp; Main Podcast Webpage</span>
+    </a>
+
+    {% assign tiktok = "@thismidlifehustle" %}
+    <a class="btn btn-light rounded-pill" href="https://www.tiktok.com/{{ tiktok }}" role="button" title="{{ tiktok }}" target="_blank" aria-label="TikTok Link">
+        <span><img class="float-start" src="{% link {{ site.images_path }}/{{ site.tiktok-icon }} %}" alt="TikTok Icon" height="100" width="100">&nbsp;&nbsp; TikTok ({{ tiktok }}) ThisMidlifeHustle</span>
+    </a>
+
+</div>

@@ -1,0 +1,93 @@
+#
+# Configuration File
+#
+
+# Enable additional diagnostics
+verbose: true
+profile: true
+
+# Information for compile
+exclude:
+  - "CNAME"
+  - "LICENSE"
+  - "README.md"
+  - "DEVELOPMENT.md"
+  - "ATTRIBUTIONS.md"
+  - "*.js"
+  - "*.json"
+  - "*.psd"
+  - "*.ai"
+  - "assets/images/favicon/*.webmanifest"
+  - "assets/images/favicon/*.md"
+  - "assets/images/favicon/*.html"
+  - "assets/images/favicon/*.xml"
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+
+# Sass configuration
+sass:
+  sass_dir: _scss
+
+# Collections
+collections_dir: collections
+collections:
+  profiles:
+    output: true
+    order:
+      - lisa.html
+      - ray.html
+      - thismidlifehustle.html
+
+excerpt_separator: <!--excerpt-->
+
+# Information for deploy
+baseurl: ""
+
+# the base hostname & protocol for your site
+url: "https://nine3.icu"
+
+assets_path:  assets
+css_path:     assets/css
+images_path:  assets/images
+
+##
+## HEADER INFORMATION
+##
+
+# This is the site title
+title: nine3.icu
+# This is the site description - must be between 25 and 160 characters for Bing SEO
+description: >
+  The home of Lisa's and Ray's social media endeavors.
+
+# Website language
+lang: en-US
+# Header Title
+header-title: nine3.icu
+
+# The general contact default email address
+email: hello@nine3.icu
+
+##
+## Global Images
+##
+default-image: default.webp
+link-icon: icons/link.svg
+email-icon: icons/email.svg
+phone-icon: icons/phone.svg
+location-icon: icons/location.svg
+calendar-icon: icons/calendar.svg
+facebook-icon: icons/facebook.svg
+instagram-icon: icons/instagram.svg
+tiktok-icon: icons/tiktok.svg
+youtube-icon: icons/youtube.svg
+
+#
+##
+## Footer
+##
+footer-description: Get In Touch
+footer-copyright-text: Cardillo's Creations
+footer-copyright-year: 2024

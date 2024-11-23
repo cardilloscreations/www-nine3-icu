@@ -1,0 +1,25 @@
+---
+layout: contained
+---
+
+<article class="post-article single-page clearfix">
+
+  <!-- Article Header -->
+  <header class="article-header">
+    {% if page.image %}
+    <div class="img-wrap">
+    <img src="{{ site.baseurl }}/assets/images/posts/{{ page.image }}" alt="Article Video Log Image">
+    </div>
+    {% endif %}
+    <div class="article-date text-left">
+    <span class="year">{{ page.date | date: "%Y" }}</span>
+    <span class="month">{{ page.date | date: "%b" }}</span>
+    <span class="day">{{ page.date | date: "%d" }}</span>
+    </div>    
+  </header>
+
+  <div class="article-content">
+    {{ content }}
+  </div>
+
+</article>

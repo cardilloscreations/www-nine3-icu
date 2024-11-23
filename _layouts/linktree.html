@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+
+{%- capture preloadLines -%}
+<link rel="preload" href="{% link {{ site.images_path }}/header-image.land.webp %}" as="image" type="image/webp" fetchpriority="high">
+{%- endcapture -%}
+{%- include head.html preloadLines=preloadLines -%}
+
+<body class="ltree-body">
+
+  <div class="ltree-section text-center" id="ltree">
+    <div class="row d-flex justify-content-center">
+      <div class="profile-header">
+        <img class="rounded-circle mx-auto" src="{% link {{ site.images_path }}/profiles/{{ page.profile_image }} %}" alt="{{ page.profile_name }}">
+        <h1>{{ page.profile_name }}</h1>
+      </div>
+    
+      {{- content -}}
+    </div>
+  </div>
+
+  {%- include footer.html -%}
+
+  {%- include scripts/ext-scripts.html -%}
+
+</body>
+
+</html>

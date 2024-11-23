@@ -1,0 +1,28 @@
+---
+layout: linktree
+profile_name: Ray C.
+profile_image: Ray.600sq.webp
+---
+
+<div class="ltree-buttons d-grid gap-3">
+
+    {% assign email = "mrmighty1993@gmail.com" %}
+    <a class="btn btn-light rounded-pill" href="mailto:{{ email }}" role="button" title="{{ email }}" target="_blank" aria-label="Email Address">
+        <span><img class="float-start" src="{% link {{ site.images_path }}/{{ site.email-icon }} %}" alt="Email Icon" height="100" width="100">&nbsp;&nbsp; Email ({{ email }})</span>
+    </a>
+
+    {% assign tiktok = "@mrmighty93" %}
+    <a class="btn btn-light rounded-pill" href="https://www.tiktok.com/{{ tiktok }}" role="button" title="{{ tiktok }}" target="_blank" aria-label="TikTok Link">
+        <span><img class="float-start" src="{% link {{ site.images_path }}/{{ site.tiktok-icon }} %}" alt="TikTok Icon" height="100" width="100">&nbsp;&nbsp; TikTok ({{ tiktok }}) Mr. Mighty</span>
+    </a>
+
+    {% assign tiktok = "@eclecticalengineer" %}
+    <a class="btn btn-light rounded-pill" href="https://www.tiktok.com/{{ tiktok }}" role="button" title="{{ tiktok }}" target="_blank" aria-label="TikTok Link">
+        <span><img class="float-start" src="{% link {{ site.images_path }}/{{ site.tiktok-icon }} %}" alt="TikTok Icon" height="100" width="100">&nbsp;&nbsp; TikTok ({{ tiktok }}) Eclectical Engineer</span>
+    </a>
+
+    <a class="btn btn-light rounded-pill" href="https://whop.com/social-army/?a=cardilloscreations" role="button" title="Webpage" target="_blank" aria-label="Social Army Link">
+        <span><img class="float-start" src="{% link {{ site.images_path }}/{{ site.link-icon }} %}" alt="Link Icon" height="100" width="100">&nbsp;&nbsp; Social Army - TikTok Shop Community</span>
+    </a>
+
+</div>

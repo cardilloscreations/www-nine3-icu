@@ -1,0 +1,16 @@
+<section class="site-section links-section text-center" id="links">
+  <header class="section-header">
+    <h2>
+      Link Trees
+    </h2>
+  </header>
+  <div class="section-content">
+    <div class="d-flex-row mb-3">
+      {% for profile in site.profiles %}
+      <a href="{{ profile.url }}">
+        <h2>{{ profile.profile_name }}</h2>
+      </a>
+      {% endfor %}  
+    </div>  
+  </div>
+</section>
