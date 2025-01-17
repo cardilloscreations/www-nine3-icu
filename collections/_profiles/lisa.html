@@ -7,18 +7,27 @@ profile_image: Lisa.600sq.webp
 <div class="ltree-buttons d-grid gap-3">
 
     {% assign email = "mightymite1993@gmail.com" %}
-    <a class="btn btn-light rounded-pill" href="mailto:{{ email }}" role="button" title="{{ email }}" target="_blank" aria-label="Email Address">
-        <span><img class="float-start" src="{% link {{ site.images_path }}/{{ site.email-icon }} %}" alt="Email Icon" height="100" width="100">&nbsp;&nbsp; Email ({{ email }})</span>
+    <a class="btn btn-light rounded-pill text-start" href="mailto:{{ email }}" role="button" title="{{ email }}" target="_blank" aria-label="Email Address">
+        <div class="row align-items-center">
+            <img class="col float-start" src="{% link {{ site.images_path }}/{{ site.email-icon }} %}" alt="Email Icon" height="100" width="100">
+            <span class="col-10">Email ({{ email }})</span>
+        </div>
     </a>
 
     {% assign tiktok = "@mightymite93" %}
-    <a class="btn btn-light rounded-pill" href="https://www.tiktok.com/{{ tiktok }}" role="button" title="{{ tiktok }}" target="_blank" aria-label="TikTok Link">
-        <span><img class="float-start" src="{% link {{ site.images_path }}/{{ site.tiktok-icon }} %}" alt="TikTok Icon" height="100" width="100">&nbsp;&nbsp; TikTok ({{ tiktok }}) Lisa C.</span>
+    <a class="btn btn-light rounded-pill text-start" href="https://www.tiktok.com/{{ tiktok }}" role="button" title="{{ tiktok }}" target="_blank" aria-label="TikTok Link">
+        <div class="row align-items-center">
+            <img class="col float-start" src="{% link {{ site.images_path }}/{{ site.tiktok-icon }} %}" alt="TikTok Icon" height="100" width="100">
+            <span class="col-10">TikTok ({{ tiktok }}) Lisa C.</span>
+        </div>
     </a>
 
     {% assign tiktok = "@yourhairgirl93" %}
-    <a class="btn btn-light rounded-pill" href="https://www.tiktok.com/{{ tiktok }}" role="button" title="{{ tiktok }}" target="_blank" aria-label="TikTok Link">
-        <span><img class="float-start" src="{% link {{ site.images_path }}/{{ site.tiktok-icon }} %}" alt="TikTok Icon" height="100" width="100">&nbsp;&nbsp; TikTok ({{ tiktok }}) Your Hair Girl Lisa</span>
+    <a class="btn btn-light rounded-pill text-start" href="https://www.tiktok.com/{{ tiktok }}" role="button" title="{{ tiktok }}" target="_blank" aria-label="TikTok Link">
+        <div class="row align-items-center">
+            <img class="col float-start" src="{% link {{ site.images_path }}/{{ site.tiktok-icon }} %}" alt="TikTok Icon" height="100" width="100">
+            <span class="col-10">TikTok ({{ tiktok }}) Your Hair Girl Lisa</span>
+        </div>
     </a>
 
 </div>
